@@ -14,7 +14,6 @@ app = Flask(__name__)
 PASSWORD_HASH = os.environ.get("SONG_CATALOG_PASSWORD_HASH")
 if not PASSWORD_HASH:
     plain = os.environ.get("SONG_CATALOG_PASSWORD")
-    print(plain)
     if plain:
         PASSWORD_HASH = hashlib.sha256(plain.encode()).hexdigest()
     else:
