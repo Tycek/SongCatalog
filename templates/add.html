@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="fw-bold mb-3">Add New Song</h2>
+<p class="text-muted mb-4">Fill in the details below to add a new song to your collection.</p>
+
+<div class="card shadow-sm p-4 rounded-4" style="max-width: 700px; margin: auto;">
+
+    <form method="post">
+
+        <!-- Song Name -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Song Name</label>
+            <input type="text" name="name" class="form-control rounded-3" placeholder="e.g., Wonderwall" required>
+        </div>
+
+        <!-- Artist -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Artist</label>
+            <input type="text" name="artist" class="form-control rounded-3" placeholder="e.g., Oasis">
+        </div>
+
+        <!-- Genre -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Genre</label>
+            <input type="text" name="genre" class="form-control rounded-3" placeholder="e.g., Rock">
+        </div>
+
+        <!-- Tuning -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Guitar Tuning</label>
+            <input type="text" name="tuning" class="form-control rounded-3" placeholder="e.g., EADGBE">
+        </div>
+
+        <!-- Chords / Tabs link -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Chords / Tabs Link</label>
+            <input type="text" name="link" class="form-control rounded-3" placeholder="https://example.com">
+        </div>
+
+        <!-- Notes -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Notes</label>
+            <textarea name="note" rows="4" class="form-control rounded-3" placeholder="Useful information about the song..."></textarea>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Password</label>
+            <input type="password" name="password" class="form-control rounded-3" placeholder="Enter password" required>
+        </div>
+
+        <!-- Submit -->
+        <button class="btn btn-primary w-100 rounded-4 py-2 fw-semibold">
+            <i class="bi bi-plus-lg me-1"></i> Add Song
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}
