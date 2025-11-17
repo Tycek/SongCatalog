@@ -1,0 +1,47 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Stat cards */
+.stat-card {
+    background: white;
+    border-radius: 20px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.stat-card .icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 12px;
+    font-size: 1.4rem;
+}
+
+.bg-purple { background: #8b5cf6; }
+.bg-pink { background: #ec4899; }
+.bg-yellow { background: #fbbf24; }
+
+/* Filter bar */
+.filter-bar {
+    border-radius: 20px;
+}
+
+/* Genre badge */
+.genre-badge {
+    background: #eef2ff;
+    color: #4f46e5;
+    border-radius: 12px;
+    padding: 4px 10px;
+}
+
+/* Table icons */
+.icon-color {
+    color: #6366f1;
+}
